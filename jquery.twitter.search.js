@@ -167,7 +167,7 @@
 		str = '<div class="twitterSearchTweet">';
 		if (opts.avatar)
 			str += '<img class="twitterSearchProfileImg" src="' + json.profile_image_url + '" />';
-		str += '<div><span class="twitterSearchUser"><a href="http://www.twitter.com/'+ json.from_user+'/status/'+ json.id_str +'">' 
+		str += '<div><span class="twitterSearchUser"><a href="http://www.twitter.com/'+ json.from_user+'/statuses/'+ json.id_str +'">' 
 		  + json.from_user + '</a></span>';
 		pretty = prettyDate(json.created_at);
 		if (opts.time && pretty)
